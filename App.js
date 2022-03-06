@@ -97,11 +97,11 @@ const App: () => Node = () => {
   return (
   
     <View> 
-      <Hallo nama="Real Madrid"/>
-      <Tambah tambah=" Barcelona"/>
-      <Text>=============================================</Text>
+      <Hallo nama="PSG"/>
+      <Tambah tambah=" Arsenal"/>
+      <Text>============================================</Text>
       <Nilai nilai="FIFA"/>
-      <Text>=============================================</Text>
+      <Text>============================================</Text>
       <Kallo />
     </View>
    
