@@ -97,10 +97,14 @@
  
    return (
    
-     <View> 
-       <Text>======================================================</Text>
-       <Hallo nama="Richard"/>
-     </View>
+     View> 
+      <Hallo nama="PSG"/>
+      <Tambah tambah=" MU"/>
+      <Text>============================================</Text>
+      <Nilai nilai="FIFA"/>
+      <Text>============================================</Text>
+      <Kallo />
+    </View>
     
    )
  };
