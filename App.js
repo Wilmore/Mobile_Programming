@@ -42,7 +42,7 @@
        <Nama nama="Izaac, Bryan" />
        <Nama nama="Sangari, Richard" />
        <Nama nama="Tangka, Perkins" />
-       <Nama nama="Thomas, Marchel" />
+       <Nama nama="Thomas, Marchel " />
      </View>
 
    )
@@ -50,7 +50,7 @@
 
  const styles = StyleSheet.create({
    container : {
-     padding : 25,
+     padding : 26,
     },
  });
  
