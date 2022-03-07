@@ -38,8 +38,8 @@
      <View style={styles.container}> 
        <Nilai nilai="MENGGUNAKAN PROPS"/>
        <Kallo />
-       <Nama nama="Izaac, Bryan" />
        <Nama nama="Italilpessy, Wilmore" />
+       <Nama nama="Izaac, Bryan" />
        <Nama nama="Sangari, Richard" />
        <Nama nama="Tangka, Perkins" />
        <Nama nama="Thomas, Marchel" />
