@@ -35,7 +35,6 @@ export function Kallo() {
     <SafeAreaView >
 
 
-      {/* icon kurang (-) */}
       <View style={{flexDirection:'row', justifyContent:'space-between', marginTop:30}}>
         <TouchableOpacity onPress={() => rubahNilai(angka - 1)}>
           <View>
@@ -44,15 +43,13 @@ export function Kallo() {
             </Text>
           </View>
         </TouchableOpacity>
-      
-      {/* angka yang akan ditambahkan atau dikurangkan */}
+
         <View>
           <Text style={styles.title}>
             {angka}
           </Text>
         </View>
 
-        {/* icon tambah (+) */}
         <TouchableOpacity onPress={() => rubahNilai(angka + 1)}>
           <View>
             <Text style={styles.icon}>(+)</Text>
@@ -60,8 +57,6 @@ export function Kallo() {
         </TouchableOpacity>
       </View>
 
-
-      {/* Button Reset */}
       <View style={{marginBottom:20, alignSelf:'center'}}>
         <TouchableOpacity onPress={() => rubahNilai(0)}>
           <View style={{marginTop:10}}>
@@ -71,14 +66,10 @@ export function Kallo() {
           </View>
         </TouchableOpacity>
       </View>
-
     </SafeAreaView>
   );
 }
 
-
-
-// style pada tampilan
 const styles = StyleSheet.create({
     container : {padding : 25},
     // flex : {
