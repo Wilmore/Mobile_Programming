@@ -50,7 +50,7 @@
 
  const styles = StyleSheet.create({
    container : {
-     padding : 26,
+     padding : 25,
     },
  });
  
