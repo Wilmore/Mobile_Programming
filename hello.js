@@ -76,7 +76,7 @@ export default function Hallo() {
     <SafeAreaView>
       <TouchableOpacity onPress={() => rubahNilai(nilai + 1)}>
         <View>
-          <Text style={style.tulisan}>TAMBAH</Text>
+          <Text style={style.tulisan}>TAMBAH+</Text>
         </View>
       </TouchableOpacity>
       <View>
