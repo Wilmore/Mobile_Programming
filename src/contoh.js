@@ -50,9 +50,9 @@ const Input = () => {
       />
 
       {/* Richard */}
-      {/* <TouchableOpacity style={styles.button} onPress={cl}>
+      <TouchableOpacity style={styles.button} onPress={cl}>
         <Text style={styles.textButton}>Login</Text>
-      </TouchableOpacity> */}
+      </TouchableOpacity>
     </SafeAreaView>
   );
 };
