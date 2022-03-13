@@ -33,12 +33,12 @@ const Input = () => {
       />
 
       {/* Wilmore */}
-      {/* <TextInput
+      <TextInput
         style={styles.textInput}
         onChangeText={onChangeemail}
         value={email}
         placeholder="Masukkan Email"
-      /> */}
+      />
 
       {/* Marchel */}
       {/* <TextInput
