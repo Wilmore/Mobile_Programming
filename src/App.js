@@ -1,14 +1,15 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
 import { View } from 'react-native';
-import ContohForm from './ContohForm';
+import Contoh from './contoh';
+
 
 const App = () => {
 
 
     return (
       <View>
-        <ContohForm />
+        <Contoh />
       </View>
     );
   };
