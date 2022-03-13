@@ -1,83 +1,95 @@
-/* eslint-disable prettier/prettier */
-/* eslint-disable eol-last */
-/* eslint-disable no-unused-vars */
-/* eslint-disable semi */
-/* eslint-disable prettier/prettier */
-
-import { Text, StyleSheet, View, TouchableOpacity } from 'react-native'
-import React, { Component } from 'react'
-
-export default class tes extends Component {
-    constructor(props) {
-      super(props)
-    
-
-      //state
-      this.state = {
-         mataKuliah : 'Mobile Programming',
-      }
-    }
-
-    tes(){
-        this.setState({
-            mataKuliah: 'MoPro',
-        })
-    }
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.title}>Moblie Programming</Text>
-        
-        <View style={styles.garis} />
-
-        <View style={styles.isi}>
-
-            {/* diambil dari fungsi state */}
-            <Text>State : {this.state.mataKuliah} </Text>
-
-            {/* ke fungsi props */}
-            <Props props={'Props : Mobile Programming'}/>
-
-            {/* button */}
-            <TouchableOpacity style={styles.button}
-             onPress={() => this.tes()}>
-                <Text style={{textAlign: 'center', fontWeight:'bold'}}> TES </Text>
-            </TouchableOpacity>
-        </View>
-      </View>
-    )
-  }
-}
-
-//props
-export function Props({props}) {
-    return(
-        <View>
-            <Text>{props}  </Text>
-        </View>
-    )
-}
+import React from 'react';
+import {
+  SafeAreaView,
+  StyleSheet,
+  TextInput,
+  TouchableOpacity,
+  Text,
+} from 'react-native';
 
 
-// styles
+const Input = () => {
+  const [username, onChangeusername] = React.useState('');
+  const [email, onChangeemail] = React.useState('');
+  const [password, onChangepassword] = React.useState ('');
+
+  const cl = () => {
+    onChangeusername('');
+    onChangeemail('');
+    onChangepassword('');
+    console.log(`username: ${username}, email: ${email}, password: ${password}`);
+  };
+
+  return (
+    <SafeAreaView style={styles.container}>
+        <Text style={styles.title}>FORM LOGIN</Text>
+
+    {/* Vallen */}
+      {/* <TextInput
+        style={styles.textInput}
+        onChangeText={onChangeusername}
+        value={username}
+        placeholder="Masukkan Username"
+      /> */}
+
+      {/* Wilmore */}
+      {/* <TextInput
+        style={styles.textInput}
+        onChangeText={onChangeemail}
+        value={email}
+        placeholder="Masukkan Email"
+      /> */}
+
+      {/* Marchel */}
+      {/* <TextInput
+        style={styles.textInput}
+        onChangeText={onChangepassword}
+        value={password}
+        placeholder="Masukkan Password"
+        secureTextEntry={true}
+      /> */}
+
+      {/* Richard */}
+      {/* <TouchableOpacity style={styles.button} onPress={cl}>
+        <Text style={styles.textButton}>Login</Text>
+      </TouchableOpacity> */}
+    </SafeAreaView>
+  );
+};
+
 const styles = StyleSheet.create({
-    container : {padding : 25},
-    title :{
-        fontSize :20,
-        fontWeight : 'bold',
-        textAlign : 'center',
-    },
-    garis :{
-        borderBottomWidth:2,
-        marginTop: 1,
-    },
-    isi :{
-        marginTop: 25,
-    },
-    button :{
-        backgroundColor: 'skyblue',
-        padding : 7,
-        borderRadius: 10,
-        marginTop: 15,
-    },
-})
+  container: {padding: 30},
+  title: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    textAlign: 'center',
+  },
+  garis: {
+    borderBottomWidth: 1,
+    marginTop: 10,
+  },
+  isi: {
+    marginTop: 30,
+  },
+  textInput: {
+    borderWidth: 1,
+    padding: 10,
+    borderColor: 'grey',
+    borderRadius: 5,
+    height: 40,
+    marginTop: 25,
+  },
+  button: {
+    marginTop: 20,
+    backgroundColor: 'skyblue',
+    padding: 10,
+    borderRadius: 5,
+  },
+  textButton: {
+    textAlign: 'center',
+    fontWeight: 'bold',
+  },
+});
+
+
+export default Input;
