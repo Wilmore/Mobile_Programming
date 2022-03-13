@@ -41,13 +41,13 @@ const Input = () => {
       />
 
       {/* Marchel */}
-      {/* <TextInput
+      <TextInput
         style={styles.textInput}
         onChangeText={onChangepassword}
         value={password}
         placeholder="Masukkan Password"
         secureTextEntry={true}
-      /> */}
+      />
 
       {/* Richard */}
       {/* <TouchableOpacity style={styles.button} onPress={cl}>
