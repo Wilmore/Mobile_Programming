@@ -25,12 +25,12 @@ const Input = () => {
         <Text style={styles.title}>FORM LOGIN</Text>
 
     {/* Vallen */}
-      {/* <TextInput
+      <TextInput
         style={styles.textInput}
         onChangeText={onChangeusername}
         value={username}
         placeholder="Masukkan Username"
-      /> */}
+      />
 
       {/* Wilmore */}
       {/* <TextInput
