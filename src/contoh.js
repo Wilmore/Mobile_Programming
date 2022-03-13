@@ -22,7 +22,7 @@ const Input = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-        <Text style={styles.title}>FORM LOGIN</Text>
+        <Text style={styles.title}>LOGIN</Text>
 
     {/* Vallen */}
       <TextInput
